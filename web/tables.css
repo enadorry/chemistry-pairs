@@ -1,0 +1,14 @@
+.board.table-board,.play-focus .board.table-board{display:grid;grid-template-columns:minmax(0,.36fr) minmax(0,.64fr);grid-template-rows:minmax(0,1fr);grid-auto-rows:auto;gap:10px;height:min(70dvh,700px);padding:0;overflow:hidden;align-content:stretch}
+.play-focus .board.table-board{height:auto;flex:1;min-height:0;gap:7px}
+.learning-table{display:flex;flex-direction:column;min-width:0;min-height:0;border:1px solid #ded6ed;border-radius:12px;background:#fcfaff;overflow:hidden}
+.learning-table-heading{margin:0;padding:10px 8px;font-size:13px;font-weight:600;color:#6740b9;background:#f3edff;border-bottom:1px solid #ded6ed;flex-shrink:0;line-height:1.4}
+.learning-table-list{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;padding:6px;display:flex;flex-direction:column;gap:7px}
+.table-board .card-wrap{flex-shrink:0}.table-board .card,.play-focus .table-board .card{height:132px;width:100%;border-radius:8px;padding:6px;background:#fff}
+.table-board .card .structure,.play-focus .table-board .card .structure{width:100%;height:108px;min-height:0;overflow:hidden}
+.table-board .name,.play-focus .table-board .name{font-size:13px;line-height:1.5;overflow-wrap:anywhere}.table-board .alias,.play-focus .table-board .alias{font-size:10px;display:block}.table-board .kind,.play-focus .table-board .kind{font-size:9px;display:block;margin-bottom:5px}
+.table-board .card:disabled{opacity:1;cursor:default}.table-board .card.selected{background:#f4eefe}.table-board .card.matched{background:#eef9f4}
+@media(min-width:700px){.board.table-board,.play-focus .board.table-board{grid-template-columns:minmax(0,.4fr) minmax(0,.6fr)}.learning-table-list{padding:10px;gap:10px}.table-board .card,.play-focus .table-board .card{height:150px}.table-board .card .structure,.play-focus .table-board .card .structure{height:124px}.table-board .name,.play-focus .table-board .name{font-size:16px}}
+
+.table-board .card{cursor:pointer;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}.table-board .card:active{transform:scale(.97)}
+
+.table-review{text-align:left;margin:24px 0;padding-top:20px;border-top:1px solid #ded6ed}.table-review h3{font-size:20px;margin:0 0 10px}.review-item{margin:16px 0;padding:14px;border:1px solid #ded6ed;border-radius:12px;background:#fff}.review-item h4{margin:0 0 12px;font-size:16px}.review-item h4 small{display:inline-block;margin-left:8px;color:#a63a56;font-size:14px}.review-diagrams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.review-answer{min-width:0;border-radius:8px;padding:12px}.review-answer p{font-size:14px;line-height:1.5;margin:0 0 10px}.review-answer.incorrect{background:#fff0f3}.review-answer.correct{background:#eef9f4}.review-answer .structure{display:block;width:100%;height:180px;min-height:0}@media(max-width:600px){.review-diagrams{grid-template-columns:minmax(0,1fr)}.review-answer .structure{height:160px}}
